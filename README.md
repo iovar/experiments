@@ -1,4 +1,4 @@
 experiments
 ===========
 
-Various small experiments in many programming languages
+Small experiments in various programming languages
