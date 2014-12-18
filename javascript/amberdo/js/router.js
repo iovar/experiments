@@ -1,5 +1,4 @@
 module.exports = function(app) {
-  console.log('ho');
   app.Router.map(function() {
     this.resource('todos', {path: '/'});
     this.resource('about');
