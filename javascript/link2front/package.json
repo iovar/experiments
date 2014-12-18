@@ -1,0 +1,26 @@
+{
+  "name": "link2front",
+  "version": "0.0.1",
+  "description": " link saving restful backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "John Varouhakis",
+  "license": "Apache License 2.0",
+  "dependencies": {
+    "body-parser": "^1.9.2",
+    "bower": "^1.3.12",
+    "express": "^4.10.1",
+    "gulp": "^3.8.10",
+    "gulp-exit": "0.0.2",
+    "method-override": "^2.3.0",
+    "mongoose": "^3.8.18"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-mocha": "^1.1.1",
+    "supertest": "^0.15.0"
+  }
+}

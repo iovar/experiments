@@ -1,0 +1,33 @@
+Server
+
+    1. Create static file server - DONE
+    2. Create server with routes - DONE
+    3. Attach routes to db (models) - DONE
+    4. Add testing - DONE
+    5. Add authentication
+    6. Add all required models/routes/controllers
+    7. admin account bootstrap
+
+Client
+
+
+
+
+Server Models:
+
+User {
+  * username
+  * password
+  * role (root, admin, user, guest)
+  * email
+}
+Link {
+    link
+    title
+    description
+    new_window
+    File
+}
+File {
+    url
+}

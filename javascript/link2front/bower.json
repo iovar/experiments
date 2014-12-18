@@ -1,0 +1,17 @@
+{
+  "name": "link2front",
+  "version": "0.0.1",
+  "authors": [
+    "John Varouhakis <johnvarouhakis@gmail.com>"
+  ],
+  "license": "Apache License 2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
