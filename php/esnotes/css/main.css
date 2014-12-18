@@ -1,0 +1,58 @@
+.esnotes-widget-class {
+
+}
+
+.esnotes-widget-class div{
+    position:relative;
+    vertical-align: top;
+
+    overflow-y:auto;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+
+    padding:16px;
+    border-radius: 2px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: -moz-linear-gradient(-45deg, rgba(0,0,0,0.30) 0%, rgba(255,255,255,0.25) 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,0.30)), color-stop(100%,rgba(255,255,255,0.25))); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.30) 0%,rgba(255,255,255,0.25) 100%); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(-45deg, rgba(0,0,0,0.30) 0%,rgba(255,255,255,0.25) 100%); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(-45deg, rgba(0,0,0,0.30) 0%,rgba(255,255,255,0.25) 100%); /* IE10+ */
+    background-image: linear-gradient(135deg, rgba(0,0,0,0.30) 0%,rgba(255,255,255,0.25) 100%); /* W3C */
+
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+
+
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    z-index: 1;
+}
+
+.esnotes-widget-class div.zoom:hover{
+
+    transform:scale(1.2) ;
+    -ms-transform:scale(1.2); /* IE 9 */
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    z-index: 999;
+}
+
+.esnotes-widget-class div.zoom-tilt-right:hover{
+
+    transform:rotate(2deg) scale(1.2) ;
+    -ms-transform:rotate(2deg) scale(1.2); /* IE 9 */
+    -webkit-transform:rotate(2deg) scale(1.2); /* Safari and Chrome */
+    z-index: 999;
+
+}
+
+.esnotes-widget-class div.zoom-tilt-left:hover{
+
+    transform:rotate(-2deg) scale(1.2) ;
+    -ms-transform:rotate(-2deg) scale(1.2); /* IE 9 */
+    -webkit-transform:rotate(-2deg) scale(1.2); /* Safari and Chrome */
+    z-index: 999;
+
+}
