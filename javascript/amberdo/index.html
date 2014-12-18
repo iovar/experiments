@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+  <title>Amberdo</title>
+  <link rel="stylesheet" href="build/css/main.css">
+</head>
+<body class="amber default-color">
+
+  <script type="text/x-handlebars">
+    <div class="outer-container">
+      <div class="inner-container">
+        {{outlet}}
+      </div>
+    </div>
+  </script>
+
+  <script type="text/x-handlebars" id="todos">
+    <header class="input-container inverse-color">
+      {{input type="text" class="todo-input default-color"
+        action="newItem" focus-out="newItem"
+        value=inputValue}}
+    </header>
+
+    <div class="middle-container">
+      <ul class="todos">
+      {{#each item in model itemController='todo'}}
+        <li {{bind-attr class="item.isDone item.editMode"}}>
+          <div class="item-container">
+            {{#if item.editMode}}
+              {{edit-todo type="text" class=""
+                insert-newline="saveTodo" focus-out="saveTodo"
+                value=item.text}}
+            {{else}}
+              <div {{action "editTodo" on="doubleClick"}}
+                   class="text">
+                {{item.text}}
+              </div>
+              <div {{action "click" item on="click"}} class="tick">
+                <span class="not-done">&#x25CB;</span>
+                <span class="done">&#x25CF;</span>
+              </div>
+            {{/if}}
+          </div>
+        </li>
+      {{/each}}
+      </ul>
+    </div>
+    <footer class="bottom-container">
+      <div class="remaining">
+        <b>{{remaining}}</b> remaining
+      </div>
+      <div class="filter">
+        <div class="filter-buttons">
+          <div>
+            Pending
+          </div>
+          <div>
+            Done
+          </div>
+          <div class="active">
+            All
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="clear">
+          Clear
+        </div>
+      </div>
+    </footer>
+  </script>
+
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/handlebars-v1.3.0.js"></script>
+  <script src="js/libs/ember-1.8.1.js"></script>
+  <script src="js/libs/ember-data.min.js"></script>
+  <script src="js/libs/ember-ls-adapter.js"></script>
+  <script src="build/js/bundle.js"></script>
+</body>
+</html>
