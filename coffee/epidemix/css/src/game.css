@@ -1,0 +1,28 @@
+.canvas-container {
+  position: absolute;
+  top: 0;
+  z-index: 1; 
+  overflow: visible;
+  padding:0;
+}
+
+.canvas-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.canvas-container canvas:first-of-type {
+  z-index: 2;
+}
+
+.canvas-container canvas:nth-of-type(2) {
+  z-index: 3;
+}
+
+.ui-page-theme-a .ui-bar-inherit {
+  z-index:10;
+  height: 44px;
+  background-color: rgba( 27,23,23,0.3);
+}
