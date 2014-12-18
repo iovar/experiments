@@ -1,3 +1,8 @@
+Some projects might have a different license in their directory, in which case,
+*BOTH* apply. So everything in this repository is licensed under the MIT license
+and possibly under a different license, too. In cases such as these, the recipient
+of the source code can decide which of these licenses apply (if not all).
+
 The MIT License (MIT)
 
 Copyright (c) 2014 John Varouhakiks <johnvarouhakis@gmail.com>
