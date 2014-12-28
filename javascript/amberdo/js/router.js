@@ -1,9 +1,9 @@
 module.exports = function(app) {
   app.Router.map(function() {
-    this.resource('todos', {path: '/'});
-    this.resource('about');
+    this.resource('todos', {path: '/'}, function() {
+
+    });
   });
 
-  require('./routes/about')(app);
   require('./routes/todos')(app);
 };

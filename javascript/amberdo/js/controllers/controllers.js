@@ -7,13 +7,6 @@ module.exports = function(app) {
                  .get('length');
     }.property('@each.isDone'),
     actions: {
-      click: function(param) {
-        this.store.find('todo', param.id)
-            .then(function(item) {
-              item.set('isDone',!item.get('isDone'));
-              item.save();
-            });
-      },
       newItem: function() {
         var _input = this.get('inputValue').trim();
 
@@ -32,6 +25,13 @@ module.exports = function(app) {
   app.TodoController = Ember.ObjectController.extend({
     editMode: false,
     actions: {
+      click: function(param) {
+        this.store.find('todo', param.id)
+            .then(function(item) {
+              item.set('isDone',!item.get('isDone'));
+              item.save();
+            });
+      },
       editTodo: function() {
         this.set('editMode', true);
       },
