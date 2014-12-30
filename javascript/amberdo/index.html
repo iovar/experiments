@@ -21,6 +21,7 @@
       {{input type="text" class="todo-input default-color"
         action="newItem" focus-out="newItem"
         value=inputValue}}
+      {{input type="checkbox" checked=allAreDone}}
     </header>
     <div class="middle-container">
       {{outlet}}
@@ -31,21 +32,23 @@
       </div>
       <div class="filter">
         <div class="filter-buttons">
-          <div>
-            Pending
-          </div>
-          <div>
-            Done
-          </div>
-          <div class="active">
+          {{#link-to "todos.index" activeClass="active"}}
             All
-          </div>
+          {{/link-to}}
+          {{#link-to "todos.active" activeClass="active"}}
+            Active
+          {{/link-to}}
+          {{#link-to "todos.completed" activeClass="active"}}
+            Completed
+          {{/link-to}}
         </div>
       </div>
       <div>
-        <div class="clear">
+        {{#if hasCompleted}}
+        <a class="clear" {{action "clearComleted"}}>
           Clear
-        </div>
+        </a>
+        {{/if}}
       </div>
     </footer>
   </script>

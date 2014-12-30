@@ -29,8 +29,10 @@
       justify-content: center;
       align-items: center;
       align-content: center;
-      &>div {
+      &>a {
         padding: 8px;
+        color: rgba(0,0,0, 0.68);
+        text-decoration: none;
         background: #D87001;
         &:not(:last-of-type) {
           border-right: 1px solid rgba(0,0,0,0.3);
@@ -56,5 +58,13 @@
     padding: 4px;
     border-radius: 4px;
     background: #D87001;
+    color: rgba(0,0,0, 0.68);
+    text-decoration: none;
+    display: block;
+    &:active {
+      background: rgba(0,0,0,0.8);
+      color: #D87001;
+      text-shadow: none;
+    }
   }
 }

@@ -1,10 +1,25 @@
 module.exports = function(app) {
-  app.TodosController = Ember.ObjectController.extend({
+  app.TodosController = Ember.ArrayController.extend({
     inputValue: '',
     remaining: function() {
-      return this.get('model')
-                 .filterBy('isDone',false)
+      return this.filterBy('isDone',false)
                  .get('length');
+    }.property('@each.isDone'),
+    hasCompleted: function() {
+      return this.get('completed') > 0;
+    }.property('completed'),
+    completed: function() {
+      return this.filterBy('isDone',true).get('length');
+    }.property('@each.isDone'),
+    allAreDone: function(key, value) {
+      if(value === undefined) {
+        return !!this.get('length') && this.isEvery('isDone');
+      }
+      else {
+        this.setEach('isDone',value);
+        this.invoke('save');
+        return value;
+      }
     }.property('@each.isDone'),
     actions: {
       newItem: function() {
@@ -19,6 +34,12 @@ module.exports = function(app) {
           isDone: false
         });
         newItem.save();
+      },
+      clearComleted: function() {
+        var completed = this.filterBy('isDone',true);
+
+        completed.invoke('deleteRecord');
+        completed.invoke('save');
       }
     }
   });
