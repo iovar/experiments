@@ -1,3 +1,26 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      {{#link-to "frontscore" class="navbar-brand"}}Front-score{{/link-to}}
+    </div>
+    <ul class="nav navbar-nav">
+      {{#link-to "libraries" tagName="li"}}
+        {{#link-to "libraries"}}Libraries{{/link-to}}
+      {{/link-to}}
+      {{#link-to "scripts" tagName="li"}}
+        {{#link-to "scripts"}}Scripts{{/link-to}}
+      {{/link-to}}
+      {{#link-to "sites" tagName="li"}}
+        {{#link-to "sites"}}Sites{{/link-to}}
+      {{/link-to}}
+    </ul>
+  </div>
+</nav>
 
-{{outlet}}
+<div class="container-fluid">
+  <div class="panel panel-default">
+    <div class="panel-body" id="main-outlet-panel">
+      {{outlet}}
+    </div>
+  </div>
+</div>

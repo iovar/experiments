@@ -1,3 +1,3 @@
-html, body {
-  margin: 20px;
+#main-outlet-panel {
+  min-height: 320px;
 }

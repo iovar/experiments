@@ -43,5 +43,12 @@ module.exports = function(environment) {
 
   }
 
+  ENV.contentSecurityPolicy = {
+    'script-src': "'self' 'unsafe-eval' http://*:35729",
+    'font-src': "'self' http://fonts.gstatic.com",
+    'connect-src': "'self' *",
+    'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
+  };
+
   return ENV;
 };

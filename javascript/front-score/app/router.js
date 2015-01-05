@@ -6,6 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('frontscore', {path:'/'});
+  this.resource('libraries');
+  this.resource('scripts');
+  this.resource('sites');
 });
 
 export default Router;

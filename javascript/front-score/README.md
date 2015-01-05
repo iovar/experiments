@@ -1,5 +1,15 @@
 # Front-score
 
+    Front-score is a simple app that pulls Javascript usage data with the
+    Libscore public API [1][2].
+
+    [1] http://www.libscore.com
+    [2] https://github.com/julianshapiro/libscore
+
+
+
+
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
