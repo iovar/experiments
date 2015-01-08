@@ -1,0 +1,186 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.disk {
+  margin: 0 auto;
+  width: 100vmin;
+  height: 100vmin;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  transition-duration: 1s;
+  border: 2px solid white;;
+  border-radius: 1000px;
+  font-weight: 700;
+  background-color: brown;
+  color: gold;
+  box-sizing: border-box;
+  text-shadow: 0 0 55px gold, 0 0 4px black;
+}
+
+.circle span {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  transform-origin: 50%;
+  left: 50%;
+  font-size: 18px;
+  line-height: 15px;
+  display: block;
+  width: 20px;
+  margin-left: -10px;
+}
+
+.circle span:nth-of-type(1) {
+  -webkit-transform: rotate3d(0,0,1,36deg);
+}
+.circle span:nth-of-type(2) {
+  -webkit-transform: rotate3d(0,0,1,72deg);
+}
+.circle span:nth-of-type(3) {
+  -webkit-transform: rotate3d(0,0,1,108deg);
+}
+.circle span:nth-of-type(4) {
+  -webkit-transform: rotate3d(0,0,1,144deg);
+}
+.circle span:nth-of-type(5) {
+  -webkit-transform: rotate3d(0,0,1,180deg);
+}
+.circle span:nth-of-type(6) {
+  -webkit-transform: rotate3d(0,0,1,216deg);
+}
+.circle span:nth-of-type(7) {
+  -webkit-transform: rotate3d(0,0,1,252deg);
+}
+.circle span:nth-of-type(8) {
+  -webkit-transform: rotate3d(0,0,1,288deg);
+}
+.circle span:nth-of-type(9) {
+  -webkit-transform: rotate3d(0,0,1,324deg);
+}
+
+.circle-1 {
+  width: 20vmin;
+  height: 20vmin;
+  top: 40vmin;
+  left: 40vmin;
+}
+
+.circle-2 {
+  width: 27.5vmin;
+  height: 27.5vmin;
+  top: 36.25vmin;
+  left: 36.25vmin
+}
+
+.circle-3 {
+  width: 35vmin;
+  height: 35vmin;
+  top: 32.5vmin;
+  left: 32.5vmin
+}
+
+.circle-4 {
+  width: 42.5vmin;
+  height: 42.5vmin;
+  top: 28.75vmin;
+  left: 28.75vmin
+}
+
+.circle-5 {
+  width: 50vmin;
+  height: 50vmin;
+  top: 25vmin;
+  left: 25vmin
+}
+
+.circle-6 {
+  width: 57.5vmin;
+  height: 57.5vmin;
+  top: 21.25vmin;
+  left: 21.25vmin
+}
+
+.circle-7 {
+  width: 65vmin;
+  height: 65vmin;
+  top: 17.5vmin;
+  left: 17.5vmin
+}
+
+.circle-8 {
+  width: 72.5vmin;
+  height: 72.5vmin;
+  top: 13.75vmin;
+  left: 13.75vmin
+}
+
+.circle-9 {
+  width: 80vmin;
+  height: 80vmin;
+  top: 10vmin;
+  left: 10vmin
+}
+
+.circle-0 {
+  width: 87.5vmin;
+  height: 87.5vmin;
+  top: 6.25vmin;
+  left: 6.25vmin
+}
+
+
+.circle-0:hover  {
+  transform: rotate3d(0,0,1,180deg);
+  background: green;
+}
+.circle-9:hover  {
+  transform: rotate3d(0,0,1,150deg);
+  background: green;
+}
+.circle-8:hover  {
+  transform: rotate3d(0,0,1,120deg);
+  background: green;
+}
+.circle-7:hover  {
+  transform: rotate3d(0,0,1,90deg);
+  background: green;
+}
+.circle-6:hover  {
+  transform: rotate3d(0,0,1,60deg);
+  background: green;
+}
+.circle-5:hover  {
+  transform: rotate3d(0,0,1,30deg);
+  background: green;
+}
+.circle-4:hover  {
+  transform: rotate3d(0,0,1,0deg);
+  background: green;
+}
+.circle-3:hover  {
+  transform: rotate3d(0,0,1,30deg);
+  background: green;
+}
+.circle-2:hover  {
+  transform: rotate3d(0,0,1,60deg);
+  background: green;
+}
+.circle-1:hover  {
+  transform: rotate3d(0,0,1,90deg);
+  background: green;
+}
