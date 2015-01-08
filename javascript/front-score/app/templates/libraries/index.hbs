@@ -1,0 +1,6 @@
+<ul class="list-group">
+  {{#each library in model}}
+  <li class="list-group-item"
+      {{action 'click'}}>{{library.resource}}</li>
+  {{/each}}
+</ul>
