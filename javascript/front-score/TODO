@@ -1,0 +1,8 @@
+Provide routes for libraries/scripts/sites, in list and single mode
+Add a search bar that is visible on lists and searches for inputed string
+    (new search route, searches for everything and returns matches (name only))
+Add pagination options (10,20,50,100) and custom offset
+add backend that simply proxies requests (if they seem correct and they come
+from the same domain)
+
+Test and document everything

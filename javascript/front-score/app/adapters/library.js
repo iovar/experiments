@@ -1,6 +1,6 @@
 import DS from "ember-data";
 
-var ApplicationAdapter = DS.RESTAdapter.extend({
+var LibraryAdapter = DS.RESTAdapter.extend({
   host: "http://api.libscore.com",
   namespace: "v1",
   buildURL: function(type, id, record) {
@@ -11,4 +11,4 @@ var ApplicationAdapter = DS.RESTAdapter.extend({
   }
 });
 
-export default ApplicationAdapter;
+export default LibraryAdapter;

@@ -6,8 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('frontscore', {path:'/'});
-  this.resource('libraries');
+  this.resource('frontscore', { path:'/' });
+  this.resource('libraries', function() {
+    this.route('index', { path: '/' });
+    this.route('library', { path: '/:library_name' });
+  });
   this.resource('scripts');
   this.resource('sites');
 });

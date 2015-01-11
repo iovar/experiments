@@ -1,6 +1,6 @@
 import DS from "ember-data";
 
-var ApplicationSerializer = DS.RESTSerializer.extend({
+var LibrarySerializer = DS.RESTSerializer.extend({
   normalizePayload: function(payload) {
     payload.libraries = payload.results;
     delete payload.results;
@@ -10,4 +10,4 @@ var ApplicationSerializer = DS.RESTSerializer.extend({
   primaryKey: 'library'
 });
 
-export default ApplicationSerializer;
+export default LibrarySerializer;

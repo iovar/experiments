@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 var LibrariesIndexRoute = Ember.Route.extend({
   model: function() {
-    var ts = this.store.find('library');
-    return ts;
+    var model = this.store.find('library');
+    return model;
   }
 });
 
