@@ -4,14 +4,14 @@
       {{#link-to "frontscore" class="navbar-brand"}}Front-score{{/link-to}}
     </div>
     <ul class="nav navbar-nav">
-      {{#link-to "libraries" tagName="li"}}
-        {{#link-to "libraries"}}Libraries{{/link-to}}
+      {{#link-to "libraries" tagName="li" disabledClass="link-parent" disabled=true}}
+        {{#link-to "libraries" (query-params skip="0") }}Libraries{{/link-to}}
       {{/link-to}}
-      {{#link-to "scripts" tagName="li"}}
-        {{#link-to "scripts"}}Scripts{{/link-to}}
+      {{#link-to "scripts" tagName="li" disabledClass="link-parent" disabled=true}}
+        {{#link-to "scripts" (query-params skip="0")}}Scripts{{/link-to}}
       {{/link-to}}
-      {{#link-to "sites" tagName="li"}}
-        {{#link-to "sites"}}Sites{{/link-to}}
+      {{#link-to "sites" tagName="li" disabledClass="link-parent" disabled=true}}
+        {{#link-to "sites" (query-params skip="0")}}Sites{{/link-to}}
       {{/link-to}}
     </ul>
   </div>

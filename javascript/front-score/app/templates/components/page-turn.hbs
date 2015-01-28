@@ -1,0 +1,21 @@
+<nav class="text-center">
+  <ul class="pagination col-xs-12">
+    <li>
+      {{#if hasPrevPage}}
+        <a {{action "prevPage"}}  aria-label="Previous" class="col-xs-6">
+          <span aria-hidden="true">Prev</span>
+        </a>
+      {{else}}
+        <div class="col-xs-6"></div>
+
+      {{/if}}
+    </li>
+    <li>
+      {{#if hasNextPage}}
+      <a {{action "nextPage"}} aria-label="Next" class="col-xs-6">
+          <span aria-hidden="true">Next</span>
+        </a>
+      {{/if}}
+    </li>
+  </ul>
+</nav>

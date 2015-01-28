@@ -1,3 +1,4 @@
+import Ember from 'ember';
 import DS from "ember-data";
 
 var LibraryAdapter = DS.RESTAdapter.extend({
@@ -5,9 +6,8 @@ var LibraryAdapter = DS.RESTAdapter.extend({
   namespace: "v1",
   buildURL: function(type, id, record) {
     var url = this._super(type,id,record);
-    console.log('URL',url,type,id,record);
 
-    return url+'?limit=10';
+    return url;
   }
 });
 

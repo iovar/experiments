@@ -1,6 +1,9 @@
 <ul class="list-group panel-body">
   {{#each library in model}}
-  <li class="list-group-item"
-      {{action 'click'}}>{{library.resource}}</li>
+  <li class="list-group-item" {{action 'click'}}>
+    resource: {{library.resource}} Library:{{library.id}}
+    count: {{library.count}} github: {{library.github}}
+  </li>
   {{/each}}
+  {{page-turn hasPrevPage=hasPrevPage hasNextPage=hasNextPage }}
 </ul>
