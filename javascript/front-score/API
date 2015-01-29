@@ -5,12 +5,3 @@
 /scripts
     results: [{script, count, resource},...]
 
-
-/libraries/:id
-    {count, sites: [site,...],}
-
-/sites/:id
-    {url, rank, libraries: [library,...], scripts: [script,...], total?}
-
-/scripts/:id
-    {count, sites: [site,...],}

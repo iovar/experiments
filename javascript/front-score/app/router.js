@@ -9,7 +9,7 @@ Router.map(function() {
   this.resource('frontscore', { path:'/' });
   this.resource('libraries', function() {
     this.route('index', { path: '/' });
-    this.route('library', { path: '/:library_name' });
+    this.route('single', { path: '/:library_name' });
   });
   this.resource('scripts');
   this.resource('sites');
