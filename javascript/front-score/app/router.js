@@ -11,8 +11,12 @@ Router.map(function() {
     this.route('index', { path: '/' });
     this.route('single', { path: '/:library_name' });
   });
-  this.resource('scripts');
-  this.resource('sites');
+  this.resource('scripts', function() {
+    this.route('index', { path: '/' });
+  });
+  this.resource('sites', function() {
+    this.route('index', { path: '/' });
+  });
 });
 
 export default Router;
