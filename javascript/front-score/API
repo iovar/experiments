@@ -1,7 +1,0 @@
-/libraries
-    results: [{library, count, github, resources},...]
-/sites
-    results: [{url, rank, resource},...]
-/scripts
-    results: [{script, count, resource},...]
-
