@@ -1,0 +1,12 @@
+<div class="btn btn-info text-center pause-button"
+  ng-click="pauseButton.toggle()">
+  <i class="fa fa-bars fa-3x"></i>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a ng-click="pauseButton.goToStart()" class="center-block">Quit</a>
+    </li>
+    <li class="list-group-item">
+      <a ng-click="pauseButton.resume($event)" class="center-block">Resume</a>
+    </li>
+  </ul>
+</div>

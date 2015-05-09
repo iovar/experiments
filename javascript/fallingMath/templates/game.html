@@ -1,0 +1,32 @@
+<div class="modal fade" ng-class="{open: game.end}">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Game Over!</h4>
+      </div>
+      <div class="modal-body" ng-hide="game.highscore">
+        Score: {{game.score}}<br>
+        Better luck next time!
+      </div>
+      <div class="modal-body" ng-show="game.highscore">
+        Score: {{game.score}}<br>
+        New highscore!
+        <br>
+        <br>
+        <form ng-submit="game.goToStart()">
+          <div class="form-group">
+            <input type="text" placeholder="Name"
+            class="form-control"
+            ng-model="game.name">
+          </div>
+          <input type="submit" class="hidden">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a ng-click="game.goToStart()" class="btn btn-default">Ok</a>
+      </div>
+    </div>
+  </div>
+</div>
+<sized-canvas></sized-canvas>
+<pause-button></pause-button>

@@ -1,0 +1,17 @@
+<section class="text-center">
+  <h1>High Scores!</h1>
+  <br>
+  <br>
+  <br>
+  <ul class="well list-group">
+    <li ng-repeat="highscore in leaderboard.highscores"
+        class="list-group-item row">
+        <div class="col-xs-2 text-left"><b>{{$index}}.</b></div>
+        <div class="col-xs-4 text-left">{{highscore.name}}</div>
+        <div class="col-xs-6">{{highscore.score}}</div>
+    </li>
+  </ul>
+  <br>
+  <br>
+  <a class="btn btn-success btn-lg" href="#/start">Back</a>
+</section>
