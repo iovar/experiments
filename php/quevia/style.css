@@ -1,0 +1,641 @@
+/*
+THEME NAME: quevia
+THEME URI: https://github.com/iovar/quevia
+DESCRIPTION: A responsive theme based on the flexibility and elegance of Twitter-Bootstrap 3. A wide range of options is offered to configure the theme according to taste and more importantly, the ability to switch easily among the amazing Bootstrap themes offered in http://bootswatch.com/, all of which are packed inside Quevia. Also there is a front-page slider, along with featured items in a configurable tiled arrangement, displaying the posts that the user wants, by specifying the parameters of a custom query.
+VERSION: 1.0.4
+AUTHOR: John Varouhakis
+AUTHOR URI: https://github.com/iovar/
+LICENSE: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl.html
+Tags: black, blue, brown, gray, green, orange, pink, purple, red, silver, white, yellow, dark, light, one-column, two-columns, left-sidebar, right-sidebar, flexible-width, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+*/
+
+/*********** Begin Sticky Footer **********/
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-size: 100%;
+}
+
+#wrap {
+    min-height: 100% !important ;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -150px;
+    padding-bottom: 5px;
+}
+
+#push {
+    height: 150px;
+}
+
+#page-footer {
+    min-height: 150px;
+    padding-top: 8px;
+    overflow: auto;
+    box-shadow: 0 -1px 2px rgba(0,0,0,0.2);
+}
+
+/*********** End Sticky Footer **********/
+
+
+/*********** Begin WordPress Classes **********/
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.sticky{
+    /* Stickies get their special formatting by
+    having the .well class applied to them, so
+    no further styling is required. */
+}
+
+.gallery-caption{
+    position: relative;
+    font-size: 0.8em;
+    opacity:0.7;
+}
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+.bypostauthor{
+}
+
+.bypostauthor > .comment-body{
+    border-left: 4px solid rgba(0,0,0,0.2);
+    border-top-left-radius:  4px;
+    border-bottom-left-radius:  4px;
+}
+
+/*********** End WordPress Classes **********/
+
+
+/*********** Begin Menu Styles **********/
+.dropdown-menu:hover,
+.dropdown-toggle:hover + .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu  .dropdown-menu:hover,
+.dropdown-menu .dropdown-toggle:hover + .dropdown-menu {
+    top:0%;
+    left:100%;
+    position: absolute !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu  a.dropdown-toggle{
+        max-width: 80px;
+    }
+
+    .dropdown-menu ,
+    .dropdown-menu:hover,
+    .dropdown-menu .dropdown-toggle + .dropdown-menu ,
+    .dropdown-menu .dropdown-toggle:hover + .dropdown-menu {
+        display: block;
+        position: relative !important;
+        float: none;
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .dropdown-menu  .dropdown-menu,
+    .dropdown-menu  .dropdown-menu:hover,
+    .dropdown-menu .dropdown-toggle:hover + .dropdown-menu {
+        left:auto;
+        top:auto;
+        margin-left  : 10px;
+    }
+
+    .dropdown-menu  li b.caret{
+        display: none;
+    }
+}
+
+/*********** End Menu Styles **********/
+
+
+/*********** Begin Generic Styles **********/
+
+img {
+    max-width: 100%;
+    height:auto;
+}
+
+.wp-post-image  {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.searchform {
+    max-width:300px;
+    padding:0;
+    margin: 0 auto !important;
+}
+
+.searchform > .btn-group{
+    max-width: 300px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.searchform .form-group {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.searchform .form-control {
+    border-top-right-radius: 0 ;
+    border-bottom-right-radius: 0;
+}
+
+footer {
+    padding-bottom: 2em;
+}
+
+footer .widget-area .widget {
+    margin-bottom: 1em;
+    overflow: auto;
+}
+
+#sidebar {
+    padding: 5px;
+}
+
+#sidebar .widget{
+    margin-bottom: 2em;
+    overflow: auto;
+}
+
+#sidebar .searchform{
+    float: none !important;
+}
+
+.post-meta{
+    font-size: 0.8em;
+    margin-top:2em;
+    margin-bottom: 2em;
+}
+
+.post{
+    margin-bottom: 5em;
+}
+
+.post h2:first-of-type{
+    margin-bottom: 1.5em;
+}
+
+.post-pagination {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.post-pagination div,
+.post-pagination nav{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.post-pagination nav ul{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.post-pagination div{
+    margin-right: 1em;
+    vertical-align: middle;
+
+}
+
+article{
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.archive-header{
+    margin-bottom: 2em;
+}
+
+.custom-header{
+    width:100%;
+    overflow: auto;
+}
+
+.custom-header-logo{
+    padding-bottom: 10px;
+}
+
+.custom-header-logo,
+.custom-header-tagline,
+.custom-header-inner .searchform{
+    margin:1rem 1rem;
+}
+
+.custom-header-inner{
+    display:inline-block;
+    opacity: 0.9;
+    margin: 1rem 1rem;
+    padding:1rem;
+    z-index:99;
+}
+
+@media (max-width: 767px) {
+    .custom-header{
+        text-align: center !important;
+    }
+    .custom-header-inner{
+        margin: 1rem 0;
+        max-width: 100%;
+        overflow: hidden;
+        padding: 1rem 0;
+    }
+}
+
+.carousel-inner .entry-title{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    float:none;
+}
+
+.carousel-inner .carousel-caption > div{
+    margin-top: 0;
+    margin-bottom: 0px;
+    float:none;
+}
+
+.carousel-caption{
+    opacity: 0.7;
+    padding-top:0;
+    padding-bottom:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.carousel-caption:hover{
+    opacity: 0.9;
+}
+
+.carousel-indicators{
+    bottom: 100px;
+}
+
+.carousel-caption-body{
+    margin-top: 0;
+    margin-bottom:5px;
+    text-align:center;
+    font-size: 0.9rem;
+}
+
+.custom-header-slider{
+    position: absolute;
+    z-index: 1;
+    overflow:visible;
+    min-height:1px !important;
+    height:1px !important;
+}
+
+#home-carousel .item{
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+.tiles{
+    margin-top:-20px;
+    margin-bottom:20px;
+    overflow: auto;
+}
+
+.tiles .item {
+    margin-top:0;
+    margin-bottom:0;
+    background-size: cover;
+    background-position: center;
+    /*background-repeat:no-repeat;*/
+    vertical-align: middle;
+    overflow: hidden;
+    text-align: center;
+    padding-right:0;
+    padding-left:0;
+    cursor: pointer;
+}
+
+.carousel-inner .entry-title a:hover,
+.tiles .item .entry-title a:hover,
+.custom-header-logo a:hover{
+    text-decoration: none;
+}
+
+.tiles .item .entry-title{
+    opacity: 0.9;
+    position: absolute;
+    bottom:0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding:4px;
+    opacity: 0.5;
+}
+
+.tiles .item .entry-title:hover{
+    opacity: 0.9;
+}
+
+.absolute-position{
+    position: absolute;
+    z-index:10;
+}
+
+/*********** End Generic Styles **********/
+
+
+/*********** Begin Comments Styles**********/
+
+.comments-area{
+    margin-top:4em;
+}
+
+.comments-area .comment-list li{
+    list-style-type: none;
+}
+
+.comments-area .comment-list li .comment-body{
+    margin-bottom: 2em;
+}
+
+.comments-area .show-comment-replies{
+    font-size: 0.8em;
+    text-decoration: underline;
+}
+
+.comment-meta{
+    margin-bottom: 1em;
+}
+
+/*********** End Comments Styles**********/
+
+/*********** Begin Post Format Styles**********/
+
+.format-gallery .gallery dl img{
+    position: relative;
+    border: none !important;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    z-index:1;
+    margin-bottom: 0.5em;
+
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    z-index: 1;
+}
+
+.format-gallery .gallery dl img:hover{
+    border-radius:0;
+    transform:scale(2) ;
+    -ms-transform:scale(2); /* IE 9 */
+    -webkit-transform:scale(2); /* Safari and Chrome */
+    z-index: 100;
+}
+
+.format-image .wp-caption-text{
+    position: relative;
+    font-size: 0.8em;
+    opacity:0.7;
+}
+
+.format-image img:first-of-type{
+    margin-bottom: 0.5em;
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+}
+
+.format-audio,
+.format-video{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    background: -moz-linear-gradient(-45deg,  rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,0.1)), color-stop(100%,rgba(255,255,255,0.1)));
+    background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,0.1) 0%,rgba(255,255,255,0.1) 100%);
+    background: -o-linear-gradient(-45deg,  rgba(0,0,0,0.1) 0%,rgba(255,255,255,0.1) 100%);
+    background: -ms-linear-gradient(-45deg,  rgba(0,0,0,0.1) 0%,rgba(255,255,255,0.1) 100%);
+    background: linear-gradient(135deg,  rgba(0,0,0,0.1) 0%,rgba(255,255,255,0.1) 100%);
+}
+
+.format-audio .wp-audio-shortcode{
+    display: block;
+    margin: 10px auto ;
+    max-width: 480px;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.format-audio .mejs-controls button:hover{
+    transform:scale(1.5) ;
+    -ms-transform:scale(1.5);
+    -webkit-transform:scale(1.5);
+    z-index: 100;
+}
+
+.format-video iframe,
+.format-video embed,
+.format-video video{
+    display: block;
+    margin: 10px auto ;
+}
+
+.format-aside,
+.format-status{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.format-aside .entry-content{
+    font-size: 1.2em;
+}
+
+.format-status .entry-title,
+.format-aside .entry-title,
+.format-quote .entry-title{
+    display: none;
+}
+
+.format-status .entry-content{
+    font-size: 1.5em;
+}
+
+.format-status .entry-content p:first-of-type:before{
+    content: '~';
+    margin-right: 10px;
+    font-size: 0.8em;
+    opacity:0.6;
+}
+
+.format-link.index-entry .entry-title{
+    font-size: 0.8em;
+    margin-bottom: 0 !important;
+}
+
+.format-link .entry-content{
+    margin-top: 0;
+    font-size: 1.2em;
+}
+.format-link .entry-content p:first-of-type:before{
+    content: '\2192 ';
+    margin-right: 10px;
+    font-size: 0.8em;
+    opacity:0.6;
+}
+
+.format-link.index-entry .post-meta{
+    margin-top: 0;
+}
+
+.format-quote .entry-content blockquote p{
+    margin-top: 0;
+    font-size: 1.8em !important;
+    font-style: oblique;
+}
+
+.format-quote .entry-content blockquote p cite{
+    display: block;
+    margin-top: 0;
+    text-align: right;
+    font-size: 0.7em !important;
+}
+
+.format-quote .entry-content blockquote p:first-of-type:before{
+    content: '\201C';
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+
+.format-chat .entry-content{
+    line-height: 2em;
+    font-family: monospace;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(127,127,127,0.6);
+}
+
+.format-chat .entry-content p{
+    padding-left: 5px;
+}
+
+.format-chat .entry-content p:nth-of-type(2n){
+    background-color: rgba(127,127,127,0.2);
+}
+
+.format-chat .entry-content p:nth-of-type(2n+1){
+    background-color: rgba(127,127,127,0.0);
+}
+
+.format-chat .entry-content p:before{
+    content: '# ';
+    font-size: 0.9em;
+    opacity: 0.5;
+}
+
+/*********** End Post Format Styles**********/

@@ -1,0 +1,7 @@
+add again debugging option from history
+show modal instead of error (every time), set state (fallbackNotifications:true)
+add secondary alarm/notification system (abstract lib)
+(make sure it runs when app sleeps)
+check flash of white screen
+make new build/re-upload
+

@@ -1,0 +1,21 @@
+.Loading-container {
+  min-height: 10rem;
+}
+
+.Loading-container .Loading-spinner {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 4rem;
+  border: 0.4rem dotted dodgerblue;
+  animation: rotateBorder 3s linear infinite;
+}
+
+@keyframes rotateBorder {
+  from {
+    transform: rotate3d(0, 0, 0, 0deg)
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 360deg)
+  }
+}
+

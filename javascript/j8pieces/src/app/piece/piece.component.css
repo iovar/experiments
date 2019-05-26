@@ -1,0 +1,13 @@
+.piece {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  margin: 1px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 40px;
+  line-height: 88px;
+  border: 1px solid black;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  transition: top 0.5s, left 0.5s;
+}

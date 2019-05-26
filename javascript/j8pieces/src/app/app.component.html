@@ -1,0 +1,16 @@
+<main class="app-container">
+  <h1><span [hidden]="titleHidden">{{title}}</span>&nbsp;</h1>
+
+    <app-piece-container></app-piece-container>
+
+  <div [ngSwitch]="engine.state">
+
+    <button *ngSwitchCase="GameState.STOPPED" class="start-game-button"
+      (click)="startGame()">Start a new Game
+    </button>
+    <button *ngSwitchCase="GameState.PLAYING" class="start-game-button"
+      (click)="endGame()">End Game
+    </button>
+  </div>
+
+</main>

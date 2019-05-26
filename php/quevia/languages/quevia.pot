@@ -1,0 +1,333 @@
+# Copyright (C) 2013 John Varouhakis <johnvarouhakis@gmail.com>
+# This file is distributed under GNU GPL v3 (or later). See LICENSE in the source directory for more.
+# Generated with xgettext :
+#   xgettext --default-domain=quevia -o languages/quevia.pot --language=PHP -k__ -k_e -k_x -k_ex `find ./ -name "*.php"`
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-11 00:44+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: index.php:6 page.php:6 front-page.php:6 single.php:6
+msgid "Sorry... no results found!"
+msgstr ""
+
+#: index.php:13
+msgid "Showing posts in category: "
+msgstr ""
+
+#: index.php:15
+msgid "Showing posts with tag: "
+msgstr ""
+
+#: index.php:18
+#, php-format
+msgid "Showing posts by author: <em>%1$s</em>"
+msgstr ""
+
+#: header.php:40
+msgid "Toggle navigation"
+msgstr ""
+
+#: comments.php:7
+#, php-format
+msgid "Comments (%1$s) :"
+msgstr ""
+
+#: comments.php:15
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:16
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:22
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:27
+msgid "No comments posted yet."
+msgstr ""
+
+#: 404.php:5
+msgid "404: Page Not Found!"
+msgstr ""
+
+#: 404.php:9
+msgid "You can use the Search to try and find what you were looking for:"
+msgstr ""
+
+#: 404.php:13
+msgid "Or maybe you prefer to go back to the"
+msgstr ""
+
+#: 404.php:14
+msgid "Homepage"
+msgstr ""
+
+#: 404.php:15
+msgid "and try to find your way from there."
+msgstr ""
+
+#: Quevia/theme-customize.php:11
+msgid "Header Options"
+msgstr ""
+
+#: Quevia/theme-customize.php:21
+msgid "Header height"
+msgstr ""
+
+#: Quevia/theme-customize.php:32
+msgid "Enable header"
+msgstr ""
+
+#: Quevia/theme-customize.php:43
+msgid "Display header logo"
+msgstr ""
+
+#: Quevia/theme-customize.php:54
+msgid "Display site tagline"
+msgstr ""
+
+#: Quevia/theme-customize.php:65
+msgid "Display search form in header"
+msgstr ""
+
+#: Quevia/theme-customize.php:75
+msgid "Front Page Options"
+msgstr ""
+
+#: Quevia/theme-customize.php:78
+msgid ""
+"Number of tiles can be 2, 3, 4 or 6. Query catagories and tags must be "
+"provided in a coma-separated list."
+msgstr ""
+
+#: Quevia/theme-customize.php:86
+msgid "Display a slider in the front page"
+msgstr ""
+
+#: Quevia/theme-customize.php:97
+msgid "Display tiles in the front page"
+msgstr ""
+
+#: Quevia/theme-customize.php:108
+msgid "Number of tiles per row"
+msgstr ""
+
+#: Quevia/theme-customize.php:119
+msgid "Height of tiles in px"
+msgstr ""
+
+#: Quevia/theme-customize.php:130
+msgid "Max number of slides/tiles (-1 no max, 0 auto)"
+msgstr ""
+
+#: Quevia/theme-customize.php:141
+msgid ""
+"Display only posts with featured image in slider/tiles (if set to false, "
+"posts without one will display the header image)"
+msgstr ""
+
+#: Quevia/theme-customize.php:152
+msgid "Do not show sticky posts in slider/tiles"
+msgstr ""
+
+#: Quevia/theme-customize.php:163
+msgid "Categories for slides/tiles (comma-separated list)"
+msgstr ""
+
+#: Quevia/theme-customize.php:174
+msgid "Tags for slides/tiles (comma-separated list)"
+msgstr ""
+
+#: Quevia/theme-customize.php:185
+msgid "Do not display sidebar in front page"
+msgstr ""
+
+#: Quevia/theme-customize.php:194
+msgid "Layout Options"
+msgstr ""
+
+#: Quevia/theme-customize.php:204
+msgid "Limit width in larger displays"
+msgstr ""
+
+#: Quevia/theme-customize.php:215
+msgid "Side of header text block"
+msgstr ""
+
+#: Quevia/theme-customize.php:219 Quevia/theme-customize.php:231
+msgid "center"
+msgstr ""
+
+#: Quevia/theme-customize.php:219 Quevia/theme-customize.php:231
+#: Quevia/theme-customize.php:243
+msgid "left"
+msgstr ""
+
+#: Quevia/theme-customize.php:219 Quevia/theme-customize.php:231
+#: Quevia/theme-customize.php:243
+msgid "right"
+msgstr ""
+
+#: Quevia/theme-customize.php:227
+msgid "Alignment of menu items"
+msgstr ""
+
+#: Quevia/theme-customize.php:239
+msgid "Left, right or no sidebar"
+msgstr ""
+
+#: Quevia/theme-customize.php:243
+msgid "off"
+msgstr ""
+
+#: Quevia/theme-customize.php:254
+msgid "Select a bootstrap theme"
+msgstr ""
+
+#: Quevia/theme-customize.php:266
+msgid "Select a color scheme for the header text block"
+msgstr ""
+
+#: Quevia/theme-customize.php:270 Quevia/theme-customize.php:283
+msgid "default"
+msgstr ""
+
+#: Quevia/theme-customize.php:270 Quevia/theme-customize.php:283
+msgid "primary"
+msgstr ""
+
+#: Quevia/theme-customize.php:270 Quevia/theme-customize.php:283
+msgid "success"
+msgstr ""
+
+#: Quevia/theme-customize.php:271 Quevia/theme-customize.php:284
+msgid "info"
+msgstr ""
+
+#: Quevia/theme-customize.php:271 Quevia/theme-customize.php:284
+msgid "warning"
+msgstr ""
+
+#: Quevia/theme-customize.php:271 Quevia/theme-customize.php:284
+msgid "danger"
+msgstr ""
+
+#: Quevia/theme-customize.php:271 Quevia/theme-customize.php:284
+msgid "none"
+msgstr ""
+
+#: Quevia/theme-customize.php:279
+msgid "Select a color scheme for the header logo"
+msgstr ""
+
+#: Quevia/theme-customize.php:292
+msgid "Use inverted colors on the navigation bar"
+msgstr ""
+
+#: Quevia/theme-customize.php:303
+msgid "Use inverted colors on the slide &amp; tile captions"
+msgstr ""
+
+#: Quevia/theme-customize.php:314
+msgid "Use inverted colors on the footer"
+msgstr ""
+
+#: Quevia/theme-customize.php:323
+msgid ""
+"For more options, go to the Appearance -> Header page in your admin panel"
+msgstr ""
+
+#: Quevia/class-walker-bootstrap-comment.php:18
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: Quevia/class-walker-bootstrap-comment.php:22
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: Quevia/class-walker-bootstrap-comment.php:25
+msgid "Edit"
+msgstr ""
+
+#: Quevia/class-walker-bootstrap-comment.php:31
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: Quevia/class-walker-bootstrap-comment.php:45
+msgid "Show"
+msgstr ""
+
+#: Quevia/class-walker-bootstrap-comment.php:45
+msgid "Hide"
+msgstr ""
+
+#: Quevia/class-walker-bootstrap-comment.php:45
+msgid "replies to this comment &crarr;"
+msgstr ""
+
+#: content.php:5
+msgid "Read More"
+msgstr ""
+
+#: footer.php:14
+msgid "All Rights Reserved"
+msgstr ""
+
+#: meta.php:11
+#, php-format
+msgid "by %1$s at %2$s, %3$s."
+msgstr ""
+
+#: meta.php:18
+#, php-format
+msgid "Posted in %1$s. %2$s"
+msgstr ""
+
+#: meta.php:19
+msgid "Tags: "
+msgstr ""
+
+#: article-main.php:7
+msgid "Post Pages: "
+msgstr ""
+
+#: nav-pages.php:3 nav-pages.php:28
+msgid "&laquo; More recent posts"
+msgstr ""
+
+#: nav-pages.php:23 nav-pages.php:29
+msgid "Older posts &raquo;"
+msgstr ""
+
+#: functions.php:36
+msgid "Home"
+msgstr ""
+
+#: functions.php:55
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:57 functions.php:67
+msgid "Generic sidebar for widgets"
+msgstr ""
+
+#: functions.php:65
+msgid "Footer widget area"
+msgstr ""
+
+#: functions.php:98
+msgid "Read more"
+msgstr ""

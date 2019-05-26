@@ -1,0 +1,9 @@
+<div class="pc-outer">
+  <div class="pc-inner" [ngClass]="{ paused: engine.state === GameState.STOPPED }">
+    <app-piece *ngFor="let num of engine.matrix | numberRange:1:8 "
+      [position]="getPosition(num)"
+      (click)="pieceClicked(num)">
+      {{ num }}
+    </app-piece>
+  </div>
+</div>

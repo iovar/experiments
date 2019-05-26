@@ -1,0 +1,13 @@
+.page-container {
+  min-height: 100vh;
+  background-color: #fafbfc;
+}
+
+@media (min-width: 767px) {
+  .page-container {
+    min-height: 100vh;
+    max-width: 40rem;
+  }
+}
+
+

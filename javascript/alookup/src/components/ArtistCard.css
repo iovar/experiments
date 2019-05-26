@@ -1,0 +1,11 @@
+.ArtistCart-img {
+  width: 10rem;
+  height: 10rem;
+}
+
+@media (max-width: 575px) {
+  .ArtistCart-img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,10 @@
+.app-container {
+  text-align: center;
+}
+
+.start-game-button {
+  padding: 8px 16px;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
